@@ -1,0 +1,15 @@
+def secondlargest(arr):
+    maxim=arr[0]
+    secmax=-1
+    if len(arr)<=1:
+        return -1
+    for i in range(len(arr)):
+        if arr[i]>maxim:
+            secmax-maxim
+            maxim=arr[i]
+        elif arr[i]<maxim and arr[i]>secmax:
+            secmax=arr[i]
+    return maxim
+    
+arr=list(map(int,input().split()))
+print(secondlargest(arr))
