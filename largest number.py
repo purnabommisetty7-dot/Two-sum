@@ -1,0 +1,9 @@
+def largest(arr):
+    maxim=arr[0]
+    for i in range(len(arr)):
+        if arr[i]>maxim:
+            maxim=arr[i]
+    return maxim
+    
+arr=list(map(int,input().split()))
+print(largest(arr))
